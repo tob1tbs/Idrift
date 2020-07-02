@@ -30,7 +30,7 @@ return [
     //
     // If in addition the middleware `LaravelLocalizationRedirectFilter` is active, then
     // every url with default locale is redirected to url without locale.
-    // For example, `/en/about` would be redirected to `/about`.
+    // For example, `/en/about` would be redirected to `/en`.
     // It is recommended to use `hideDefaultLocaleInURL` only in
     // combination with the middleware `LaravelLocalizationRedirectFilter`
     // to avoid duplicate content (SEO).
@@ -54,6 +54,6 @@ return [
 
     // URLs which should not be processed, e.g. '/nova', '/nova/*', '/nova-api/*' or specific application URLs
     // Defaults to []
-    'urlsIgnored' => ['/skipped'],
+    'urlsIgnored' => ['/admin/*'],
 
 ];
