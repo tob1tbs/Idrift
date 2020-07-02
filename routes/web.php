@@ -17,5 +17,5 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 	//MAIN CONTROLLER
 	Route::group(['prefix'=>'/'], function() {
 
-	);
+	});
 });
